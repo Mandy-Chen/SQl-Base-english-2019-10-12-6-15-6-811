@@ -1,0 +1,50 @@
+1、创建数据库
+create Database student_examination_sys;
+ 
+2、创建表student
+create table student(
+id int(11)  primary key not null,
+name varchar(45),
+age int(11) not null ,
+sex varchar(45));
+ 
+3、创建表subject
+create table subject(
+id int(11)  primary key not null,
+subject varchar(45),
+teacher varchar(45),
+description varchar(45));
+ 
+4、创建表score
+create table score(
+id int(11)  primary key not null,
+student_id int(11) ,
+teacher_id int(11),
+score int(11)
+);
+ 
+5、向student插入数据
+insert into student values(001,"zhangsan",18,"male"),(002,"lisi",20,"female");
+ 
+6、向subject插入数据
+insert into subject values(1001,"Chinese","Mr. Wang","the exam is easy"),
+(1002,"math","Miss Liu","the exam is difficult");
+ 
+7、向score插入数据
+insert into score values(1,001,1001,80),
+(2,002,1002,60),
+(3,001,1001,70),
+(4,002,1002,60.5);
+ 
+8、查看该数据库的所有表
+show tables;
+ 
+9、查看student表数据
+select * from student;
+ 
+10、查看subject表数据
+select * from subject;
+ 
+11、查看score表数据
+select * from score;
+ 
