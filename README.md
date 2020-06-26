@@ -1,3 +1,6 @@
+
+word文档有截图，但是好像显示不出来。但是sql语句是对的。
+
 Please create a local database for a student examination system(student_examination_sys) with three tables:
 
 1. Table of student:
